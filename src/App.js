@@ -1,11 +1,20 @@
-import "./App.css";
+import Navbar from "./components/navbar";
+import Home from "./components/home";
+import Subjects from "./components/subjects";
+import About from "./components/about";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>I am Groot</h1>
+      <Navbar />
+
+      <div className="content">
+        <Home />
+        <Subjects />
+        <About />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
