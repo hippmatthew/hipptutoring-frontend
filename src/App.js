@@ -1,32 +1,20 @@
-import Header from "./pages/header";
-import Home from "./pages/home";
-import Subjects from "./pages/subjects";
-import About from "./pages/about";
-import { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/header";
+import Main from "./components/main";
 
 const App = () => {
-  const [authenticated, setAuthentication] = useState(false);
-
   return (
-    <div className="App">
-      <Header />
+    <Router>
+      <div className="App">
+        <Header />
 
-      <div className="content">
-        <Home auth={authenticated} />
-
-        <br />
-        <div className="divider"></div>
-        <br />
-
-        <Subjects />
-
-        <br />
-        <div className="divider"></div>
-        <br />
-
-        <About />
+        <Switch>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 };
 

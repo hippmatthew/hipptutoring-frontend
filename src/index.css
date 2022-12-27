@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: left;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #bcbcbc;
 }
 
 .header h1 {
@@ -51,19 +51,23 @@
   font-size: 24px;
 }
 
-.content {
-  margin: 40px auto;
+.main {
+  margin: 0.7rem auto;
   padding: 20px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .home,
 .subjects,
 .about {
-  min-height: 100px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .divider {
-  height: 3px;
-  border-top: 1px solid #bcbcbc;
-  border-bottom: 1px solid #bcbcbc;
+  min-height: 2.5%;
+  background-color: darkslategray;
 }
