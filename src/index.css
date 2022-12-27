@@ -4,31 +4,45 @@
   color: #333;
 }
 
-.navbar {
+.header {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  justify-content: left;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.navbar h1 {
+.header h1 {
   color: darkslategrey;
+  display: flex;
+  justify-content: left;
 }
 
-.navbar .links {
+.navigation {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.header .links {
   margin-left: auto;
 }
 
-.navbar a {
+.header a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
 
-.navbar a:hover {
+.header a:hover {
   color: orchid;
+}
+
+.signin_area {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 1;
 }
 
 .signup_button {
@@ -38,7 +52,6 @@
 }
 
 .content {
-  max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -47,4 +60,10 @@
 .subjects,
 .about {
   min-height: 100px;
+}
+
+.divider {
+  height: 3px;
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
 }
